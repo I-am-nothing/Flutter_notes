@@ -3,16 +3,16 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:developer' as devtools show log;
 
-class NoteView extends StatefulWidget {
-  const NoteView({Key? key}) : super(key: key);
+class NotesView extends StatefulWidget {
+  const NotesView({Key? key}) : super(key: key);
 
   @override
-  State<NoteView> createState() => _NoteViewState();
+  State<NotesView> createState() => _NotesViewState();
 }
 
 enum MenuAction { logout }
 
-class _NoteViewState extends State<NoteView> {
+class _NotesViewState extends State<NotesView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
