@@ -99,7 +99,6 @@ class FirebaseAuthProvider implements AuthProvider {
   @override
   Future<void> sendEmailVerification() async {
     final user = FirebaseAuth.instance.currentUser;
-    print(user ?? false);
     if (user != null) {
       await user.sendEmailVerification();
     } else {
